@@ -305,6 +305,11 @@ c.  Usa **summary** con cada uno de los modelos obtenidos y observa **Coefficien
 
 ```{r}
 
+summary(c39)
+summary(c52)
+
+lm(c39)
+lm(c52)
 
 
 ```

@@ -163,7 +163,8 @@ e.  Determina las diferencia entre los animales que no aparecen en ambos conjunt
 ```{r}
 library(car)
 
-qqplot(log(mammals$brain),log(Animals2$brain), main = "Gráfica Gaussiana")
+qqPlot(log(mammals$brain))
+qqPlot(log(Animals2$brain))
 
 ```
 

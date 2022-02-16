@@ -290,8 +290,14 @@ b.  Repite el apartado anterior, pero obteniendo un modelo para cada una de las 
 
 plot(cabbages$VitC, cabbages$HeadWt)
 
+plot(cabbages$VitC, cabbages$HeadWt, pch=c(1,22))
 
+c39 <- lm(cabbages$VitC ~ cabbages$HeadWt, data = cabbages, subset = which(Cult=="c39"))
 
+c52 <- lm(cabbages$VitC ~ cabbages$HeadWt, data = cabbages, subset = which(Cult=="c52"))
+
+abline(c39)
+abline(c52)
 
 ```
 

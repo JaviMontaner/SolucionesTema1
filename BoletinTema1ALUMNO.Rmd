@@ -196,32 +196,39 @@ head(libReturn$results, n=5)
     d.  Utiliza la función **summary**, sobre **cabbages** y **Chile** y observa como, además de otros estadísticos, también devuelve el número de valores perdidos de cada variable.
 
 ```{r}
+library(car)
 
+head(cabbages)
 
+dim(cabbages)
 
+tail(cabbages)
 
+glimpse(cabbages)
 
+str(cabbages)
 
+any(is.na(cabbages))
 
+colSums(sapply(cabbages, is.na))
 
+head(Chile)
 
+dim(Chile)
 
+tail(Chile)
 
+glimpse(Chile)
 
+str(Chile)
 
+any(is.na(Chile))
 
+colSums(sapply(Chile, is.na))
 
+summary(cabbages)
 
-
-
-
-
-
-
-
-
-
-
+summary(Chile)
 
 ```
 
